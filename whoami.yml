@@ -1,0 +1,9 @@
+---
+- name: Connetion tester
+  hosts: all
+  become: yes
+  gather_facts: yes
+
+  tasks:
+  - name: login test
+    command: whoami
